@@ -1,3 +1,4 @@
+import java.util.Queue;
 import java.util.Scanner;
 
 class BookStore
@@ -126,39 +127,96 @@ class BookStore
         System.out.println("||            ENTER YOUR CHOICE TO ADD BOOK IN CART             ||");
         System.out.println("==================================================================");
 
-        switch(sc.nextInt())
-        {
-            case 1:
 
-                System.out.println(" JAVA BOOKS ADDED IN CART");
-                sc.nextInt();
+        int i=sc.nextInt();
+        while(i>=0) {
 
-            case 2:
 
-                System.out.println(" PYTHON BOOK ADDED IN CART");
-                sc.nextInt();
+            if (i == 1) {
+                System.out.println("java books are addaed");
+                System.out.println("if you want to continue enter 1");
+                System.out.println("if you want to exit enter 0");
 
-            case 3:
+                int  c=sc.nextInt();
+                if(c==1)
+                {
+                    System.out.println("enter your choice ");
+                    int d = sc.nextInt();
+                    i=d;
+                }
+                else {
+                    break;
+                }
 
-                System.out.println(" HTML, CSS, JavaScript BOOK ADDED IN CART");
-                sc.nextInt();
+            }
+            else if (i == 2)
+            {
+                System.out.println("python books are added");
+                System.out.println("if you want to continue enter 1");
+                System.out.println("if you want to exit enter 0");
 
-            case 4:
+                int  c=sc.nextInt();
+                if(c==1)
+                {
+                    System.out.println("enter your choice ");
+                    int d = sc.nextInt();
+                    i=d;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            else if (i == 3)
+            {
+                System.out.println("html,css,javascipt books added");
+                System.out.println("if you want to continue enter 1");
+                int  c=sc.nextInt();
+                if(c==1)
+                {
+                    System.out.println("enter your choice ");
+                    System.out.println("if you want to exit enter 0");
 
-                System.out.println(" SQL BOOK ADDED IN CART");
-                sc.nextInt();
+                    int d = sc.nextInt();
+                    i=d;
+                }
+                else
+                {
+                    break;
+                }
+            }
+                else if (i == 4)
+            {
+                System.out.println("sql books are added");
+                System.out.println("if you want to continue enter 1");
+                System.out.println("if you want to exit enter 0");
+                int  c=sc.nextInt();
+                if(c==1)
+                {
+                    System.out.println("enter your choice ");
+                    int d = sc.nextInt();
+                    i=d;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            else if (i == 5)
+            {
+                System.out.println("Thank you visit again");
+                    break;
 
-            case 5:
+            }
 
-                System.out.println("  !!!...Thank You...!!!  \n !!!...Visit Again...!!!");
-                MainPage();
-                break;
-
-            default:
-                System.out.println("Invalid data");
+        }
+        System.out.println("  !!!...Thank You...!!!  \n !!!...Visit Again...!!!");
+        MainPage();
         }
 
-    }
+
+
+
     static void Addition()
     {
 
@@ -167,7 +225,7 @@ class BookStore
 }
 
 
-class intern
+class bookstore
 {
     public static void main(String[] args)
     {
